@@ -1,0 +1,405 @@
+/* CSS Document */
+
+/* TOC 
+ * RESET STYLES
+ * FONT FACE (IF USED)
+ * HTML
+ * BODY
+ * HEADER
+ * NAVIGATION
+ * PAGE
+ * FOOTER
+ * FORMS
+ * PLUGINS
+ * PRINT STYLES
+ * MEDIA QUERIES
+---------------------------------------------------------------------------*/
+
+
+/* RESET STYLES
+---------------------------------------------------------------------------*/
+
+html {
+	overflow-y: scroll;
+}
+body {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.15; /*1.231 will be multiplied by current font size and make 16px line height */
+	min-height:100%;
+	color: #2e3192;
+	font-family: 'GTHaptikRegular';
+} 
+.left{ float:left; }
+.right{ float:right; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+button, input, select, textarea {
+	font-family: sans-serif; /*Probably Helvetica for Linux/Mac Systems And Arial for Windows PC*/
+	color: #222;
+} 
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after { /* Safari Reset as Safari does not recognise quotes property */
+	content: '';
+	content: none;
+} 
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000; 
+	cursor: help;
+}
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+p {
+	margin:0 0 10px 0;
+	padding:0;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	color: #2e3192;
+    font-size: 18px;
+}
+a:hover, a:active {
+	outline: 0;
+}
+a img {
+	border:0 none;
+}
+del {
+	text-decoration: line-through;
+	color: #ed1c24;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+small {
+	font-size: 85%;
+}
+.clickable, label, input[type=button], input[type=submit], button {
+	cursor: pointer; /* hand cursor on clickable elements */
+}
+button, input, select, textarea {
+	margin: 0; /* Webkit browsers add a 2px margin outside the chrome of form elements */
+}
+button { /* make buttons play nice in IE */
+	width: auto;
+	overflow: visible;
+}
+table {
+	font-size: inherit;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th {
+	font-weight: bold;
+	vertical-align: middle;
+}
+td {
+	font-weight: normal;
+}
+td, td img {
+	vertical-align: middle;
+}
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom:1;
+}
+.center{
+	text-align: center;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+ul, ol {
+	margin: 0;
+	padding:0;
+	list-style-type:none;
+}
+a{ text-decoration:none; }
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+h1 {
+	font-size:42px;
+}
+h2 {
+	font-size:34px;
+}
+h3 {
+	font-size:28px;
+}
+h4 {
+	font-size:24px;
+}
+h5 {
+	font-size:22px;
+}
+h6 {
+	font-size:18px;
+}
+*:focus {
+    outline: 0;
+}
+/* FONT FACE (IF USED)
+---------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'GTHaptikBold';
+  src: url('../fonts/GTHaptikBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/GTHaptikBold.otf')  format('opentype'),
+	     url('../fonts/GTHaptikBold.woff') format('woff'), url('../fonts/GTHaptikBold.ttf')  format('truetype'), url('../fonts/GTHaptikBold.svg#GTHaptikBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GTHaptikRegular';
+  src: url('../fonts/GTHaptikRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/GTHaptikRegular.otf')  format('opentype'),
+	     url('../fonts/GTHaptikRegular.woff') format('woff'), url('../fonts/GTHaptikRegular.ttf')  format('truetype'), url('../fonts/GTHaptikRegular.svg#GTHaptikRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* HTML
+---------------------------------------------------------------------------*/
+
+
+/* BODY 
+---------------------------------------------------------------------------*/
+body {
+	width:100%;
+	margin:0 auto;
+	background-color:#fff;
+}
+
+/* HEADER
+---------------------------------------------------------------------------*/
+
+
+/* NAVIGATION
+---------------------------------------------------------------------------*/
+
+
+/* PAGE
+---------------------------------------------------------------------------*/
+.page .main-wrap  .block{
+	width: 100%;
+    display: table;
+    float: none;
+}
+.image-wrap img{
+    width: 100%;
+    display: block;
+}
+.info-section, .main-wrap {
+	background-color: #f0f0f0;
+}
+.info-section {
+	text-align: center;
+	padding: 24px 0 20px 0;
+}
+.info-section  > div{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.info-section h1{
+	margin-bottom: 22px;
+}
+.info-section h1 a{
+	display: inline-block;
+	padding-left: 35px;
+}
+.info-section p{
+	padding: 0 28px;
+}
+.info-section p .fa-circle-o{
+	font-size: 15px;
+	margin: 0 1px;
+}
+.book{
+	padding: 15px 0 0 0;
+}
+.book .fa-circle-o{
+	font-size: 15px;
+    font-weight: 700;
+    margin: 0 1px;
+}
+.book h2{
+	font-size: 18px;
+   font-family: 'GTHaptikBold';
+}
+.book  a, .book span{
+	display: block;
+    font-family: 'GTHaptikBold';
+}
+.book .mail{
+	display: inline-block;
+    border-bottom: 2px solid #8f90c1;
+}
+.book .mail:hover{
+	border-bottom: 2px solid transparent;
+}
+
+/* FOOTER
+---------------------------------------------------------------------------*/
+.footer{
+	background-color: #2e3192;
+	color: #f0f0f0;
+    font-size: 13px;
+    padding: 31px 0px 30px 0px;
+}
+.footer .section{
+	width: 91.2%;
+	margin: 0 auto;
+}
+.address h3{
+    font-size: 13px;
+    color: #ffb400;
+    font-family: 'GTHaptikBold';
+    margin-bottom: 1px;
+}
+.address .fa{
+	font-size: 15px;
+    margin: 0 0 0 1px;
+}
+.address address{
+	font-style: normal;
+}
+.address span{
+	display: block;
+	margin-bottom: 1px;
+}
+.address span a{
+	color: #f0f0f0;
+    font-size: 13px;
+}
+.address span a.mailto{
+	font-family: 'GTHaptikBold';
+}
+.social-links{
+	padding: 20px 0 0 0;
+}
+.social-links li{
+	float: left;
+	padding-left: 16px;
+}
+.social-links li a{
+	display: inline-block;
+    width: 39px;
+    height: 39px;
+    border-radius: 23px;
+    position: relative;
+    text-indent: -9999px;
+    background: url('../images/social-sprites.png') no-repeat center top;
+    background-position: 0 0;
+}
+.social-links li.tweet a{
+	background-position: -54px 0px;
+}
+.social-links li.insta a{
+	background-position: -108px 0px;
+}
+.social-links li.linkedin a{
+	background-position: -162px 0px;
+}
+
+
+/* FORMS
+---------------------------------------------------------------------------*/
+
+/* PLUGINS
+---------------------------------------------------------------------------*/
+
+
+/* PRINT STYLES
+---------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* MEDIA QUERIES
+---------------------------------------------------------------------------*/
+@media screen and (min-width: 1600px) { 
+.page .main-wrap .info-section{
+	padding: 5% 0 0 0;
+}
+}
+@media screen and (min-width: 1380px) { 
+.page .block{
+	height: 631px !important;
+	min-height: 631px;
+}
+}
+@media screen and (min-width: 1250px) { 
+.info-section {
+	padding: 0 0 0 0;
+	height: 622px;
+}
+.info-section p{
+	padding: 0 80px;
+}
+}
+@media screen and (min-width: 950px) {
+.page .main-wrap .block {
+    width: 50%;
+    float: left;
+}
+.page .main-wrap .info-section{
+	float: right;
+}
+}
+@media screen and (min-width: 951px) and (max-width: 1360px){
+.page .main-wrap .display-section img{
+	display: none;
+}
+.main-wrap{
+	height: 631px;
+}
+.page .main-wrap .info-section {
+    height: 631px;
+    padding: 0;
+}
+.page .main-wrap .display-section{
+	height: 100%;
+    background: url('../images/banner.jpg') no-repeat center top;
+    background-size: cover;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 480px){
+.footer .section > div, .social-links{
+	float: none;
+    text-align: center;
+    width: 100%;
+}
+.social-links li {
+    float: none;
+    padding: 0 10px;
+    display: inline-block;
+}
+}
+
